@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from sessionapp.views import Welcome,Setattributes,Getattributes
+from sessionapp.views import Welcome,setAttributes,getAttributes
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',Welcome,name='welcome'),
-    path('setAttributes/',Setattributes,name='setAttributes'),
-    path('getAttributes/',Getattributes,name='getAttributes')
+    path('setAttributes/',setAttributes,name='setAttributes'),
+    path('getAttributes/',getAttributes,name='getAttributes')
 ]
